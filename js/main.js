@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 5000); // 5000 milliseconds = 5 seconds
 });
 
-var speed = 25;
+var speed = 29;
 
 /* Call this function with a string containing the ID name to
  * the element containing the number you want to do a count animation on.*/
