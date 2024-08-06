@@ -12,7 +12,7 @@
         window.addEventListener('scroll', function() {
             const image = document.querySelector('.scalable-image');
             const scrollPosition = window.scrollY;
-            const scaleValue = Math.max(0.3, 1 - scrollPosition / 1000); // Adjust the divisor to control the scaling speed
+            const scaleValue = Math.max(0.5, 1 - scrollPosition / 1000); // Adjust the divisor to control the scaling speed
             image.style.transform = `scale(${scaleValue})`;
         });
     
