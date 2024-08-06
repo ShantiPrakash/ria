@@ -211,6 +211,12 @@ background:url('../img/gradient-01.svg') no-repeat center center/cover;
     opacity: 0;
 }
 
+p#nbr_w {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+}
+
 .img_container:hover .project_name {
     opacity: 1;
 }
@@ -223,7 +229,7 @@ background: url('../img/Plant_Branch.svg') no-repeat bottom center/contain;
     right: 0;
     height: 100%;
     width: 100%;
-    max-width: 170px;
+    max-width: 179px;
     transition: .5s ease;
     z-index: 1300;
     animation-name: example;
@@ -251,7 +257,7 @@ opacity:1;
 
 .scalable-image {
     position: fixed;
-    width: 28%;
+    width: 33%;
     height: auto;
     transform-origin: 0px 0px 0px;
     transition: transform 0.3s ease;
