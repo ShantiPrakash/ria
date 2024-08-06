@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.main-wrapper {
+    background: #fff;
+}
+
+.contact {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.contact:hover {
+    color: #7068D6;
+    cursor: pointer;
+}
+
+
+.colorPick {
+    float: right;
+    width: 140px;
+    height: auto;
+}
+
+.contactflex {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.arrowimg {
+    width: 15px;
+    height: auto;
+    animation: scroll-down 3s infinite backwards;
+}
+
+.projetsH {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+
+.projectlist li:hover {
+    color: #7068D6;
+    cursor: pointer;
+}
+
+
+
+.projectlist {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.projectlist li {
+    font-weight: bold;
+}
+
+.projectlist li:hover {
+    list-style-image: url(/img/custombullet.svg);
+}
+
+.footerH {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footerlist {
+    direction: rtl;
+    text-decoration: underline;
+}
+
+.footerlist li:hover {
+    list-style-image: url(/img/custombullet.svg);
+    color: #7068D6;
+    cursor: pointer;
+
+}
+
+.contactinfo a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #808080;
+}
+
+.contactinfo a:hover {
+    color: #7068D6;
+}
+
+
+.footerimg {
+    width: auto;
+    height: 300px;
+}
+
+
+.footerlist {
+    margin-right: 0;
+    padding-right: 0;
+    list-style-type: none;
+    font-weight: 700;
+}
+
+
+
+/* parallax effect */
+.parallax {
+    /* The image used */
+    background-image: url("../img/scroll_img.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottomLogo {
+    width: 40%;
+    height: auto;
+}
+
+.contactinfo {
+    text-align: right;
+}
+
+.projects .img_ani_wrapper::before {
+    content: '';
+    background: url('../img/gradient-01.svg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    transform: scale(1.1);
+    z-index: 1200;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.projects .img_ani_wrapper::after {
+    content: '';
+    background: url('../img/Plant_Branch.svg') no-repeat center center/cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-position: right center;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    transition: .5s ease;
+    z-index: 9999;
+    display: block;
+    top: 60%;
+    opacity: 0;
+}
+
+.projects .col-md-6:hover .img_ani_wrapper::before {
+    opacity: 1;
+}
+
+.projects .col-md-6:hover .img_ani_wrapper::after {
+    opacity: 1;
+}
+
+.img_container {
+position:relative;
+}
+
+.img_container:hover .img_block::before {
+content:'';
+background:url('../img/gradient-01.svg') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  transition: .5s ease;
+  z-index:1200;
+}
+
+/* .img_container:hover ::after {
+    content:'Love';
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:10px;
+    font-size:15px;
+} */
+
+.img_container:hover .img_block::after {
+content:'';
+background: url('../img/Plant_Branch.svg') no-repeat bottom center/contain;
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 0%;
+    max-width: 150px;
+    transition: .5s ease;
+    z-index: 1300;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+@keyframes example {
+  0%   {width:0%;}
+  /* 30%  {width:50%;}
+  80% {width:100%;}*/
+  100% {width:100%;}
+}
+
+.img_container:hover {
+    cursor:pointer;
+}
+
+.img_container:hover ::before {
+opacity:1;
+}
+
+.img_container:hover ::after {
+opacity:1;
+}
+
+.scalable-image {
+    position: fixed;
+    width: 35%;
+    height: auto;
+    transform-origin: 0px 0px 0px;
+    transition: transform 0.3s ease;
+    top: 0;
+}
+
+#cxp_loading {
+    width: 100%;
+    height: 100vh;
+    background: #fff url(https://edukyu.com/assets/cxp-assets/imgs/gif/KYUKIBADHNAJARURIHAIsmallcaps-GIF.gif) no-repeat center center;
+    z-index: 99999;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 1s ease-out;
+}
+
+#loader img {
+    width: 33%;
+    float: left;
+    animation-name: loaderImg;
+    animation-duration: 7s;
+    /* width: 100%; */
+}
+
+@keyframes loaderImg {
+  0%   {transform:scale(1.1);}
+  /*30%  {transform:scale(1.2);}
+  80% {transform:scale(1.3);}*/
+  100% {transform:scale(1.5);}
+}
+
+#loader .moveUp { 
+    animation-name: moveUp;
+    animation-duration: 7s;
+}
+
+@keyframes moveUp {
+  0%   {transform:scale(1.0); margin-bottom:-200px;}
+  100% {transform:scale(1.25);margin-bottom:0px;}
+}
+
+/* mobile styles */
+@media (max-width:768px) {
+    .projectlist {
+        padding-left: 15px !important;
+    }
+
+    .bottomLogo {
+        text-align: center !important;
+    }
+
+    footer {
+        padding-bottom: 250px !important;
+        text-align: center !important;
+    }
+
+
+
+}
