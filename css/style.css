@@ -213,7 +213,7 @@ background:url('../img/gradient-01.svg') no-repeat center center/cover;
 
 p#nbr_w {
     position: absolute;
-    bottom: 0;
+    bottom: 11%;
     font-size: 16px;
 }
 
@@ -229,7 +229,7 @@ background: url('../img/Plant_Branch.svg') no-repeat bottom center/contain;
     right: 0;
     height: 100%;
     width: 100%;
-    max-width: 179px;
+    max-width: 183px;
     transition: .5s ease;
     z-index: 1300;
     animation-name: example;
