@@ -135,6 +135,16 @@
     text-align: right;
 }
 
+#loader > img {
+    position: absolute;
+    right: 0;
+}
+
+#loader > img:first-child {
+    position: absolute;
+    left: 0;
+}
+
 .projects .img_ani_wrapper::before {
     content: '';
     background: url('../img/gradient-01.svg') no-repeat center center/cover;
@@ -213,7 +223,7 @@ background:url('../img/gradient-01.svg') no-repeat center center/cover;
 
 p#nbr_w {
     position: absolute;
-    bottom: 11%;
+    bottom: 8%;
     font-size: 16px;
 }
 
